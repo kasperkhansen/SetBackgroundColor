@@ -58,7 +58,7 @@ function useColorPicker() {
 function increaseFont(element) {
     pArray.forEach(p => {
         let currentSize = window.getComputedStyle(p).fontSize;
-        let newSize = parseFloat(currentSize) + 1; // Øger med 1 pixel
+        let newSize = parseFloat(currentSize) + 1;
         p.style.fontSize = newSize + 'px';
     });
 }
@@ -67,7 +67,7 @@ function increaseFont(element) {
 function decreaseFont() {
     pArray.forEach(p => {
         let currentSize = window.getComputedStyle(p).fontSize;
-        let newSize = parseFloat(currentSize) - 1; // Mindsker med 1 pixel
+        let newSize = parseFloat(currentSize) - 1;
         p.style.fontSize = newSize + 'px';
     });
 }
